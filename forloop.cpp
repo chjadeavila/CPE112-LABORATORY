@@ -1,15 +1,25 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
-    int numTimes, numTime;
 
-    for (numTimes = 4;
-    numTimes <=10;
-    numTime = numTimes+2);
+    //initialization outside the loop
+    int num, sum = 0;
 
-    cout <<numTimes << endl;
+    //input 
+    cout << "Enter positive number: ";
+    cin >> num;
+    
+    //process
+    for (int i = 1; i <= num; ++i) {
+        sum += i;
+    }
 
+    //output
+    cout << "sum is " << sum << endl;
+
+    for (int i = 0; i <= 7; ++i) {
+        cout << i << "";
+    }
 
 }
